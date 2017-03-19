@@ -4,14 +4,14 @@ function refreshPage() {
 
 
 function update_box() {
-    
+
     var birthday_json = document.getElementById("input_birthday").value;
     var year = document.getElementById("input_year").value;
 
     $('.child-box').remove();
 
     var new_list = [];
-    var day_box_obj = { "Monday": [], "Tuesday": [], "Wednesday": [], "Thursday": [], "Friday": [], "Saturday": [] , "Sunday": [] };
+    var day_box_obj = { "Monday": [], "Tuesday": [], "Wednesday": [], "Thursday": [], "Friday": [], "Saturday": [], "Sunday": [] };
 
     var birthday_json = JSON.parse(birthday_json);
 
@@ -44,8 +44,8 @@ function update_box() {
 
 function making_box(array, id) {
     if (array.length > 0) {
-		var dimension = CalcSize(array.length);
-		var dimension = dimension/3 + "%";
+        var dimension = CalcSize(array.length);
+        var dimension = dimension / 3 + "%";
         for (var i = 0; i < array.length; i++) {
 
             var div = document.createElement('div');
@@ -59,7 +59,7 @@ function making_box(array, id) {
     }
 }
 
-function CalcSize (num){
+function CalcSize(num) {
     var number = num;
     var width = 300;
     var height = 300;
@@ -68,8 +68,8 @@ function CalcSize (num){
     console.log(elementArea);
     var sideLength = parseInt(Math.sqrt(elementArea));
     console.log(sideLength);
-    var numX = Math.ceil(width/sideLength);
-    sideLength = width/numX;
+    var numX = Math.ceil(width / sideLength);
+    sideLength = width / numX;
     console.log(sideLength);
     return sideLength;
 }
@@ -114,7 +114,7 @@ function getDay(bday, input_year) {
     var currentTime = new Date(
         parseInt(bdayArray[1]),
         parseInt(bdayArray[0]) - 1, //month starts from 0
-        parseInt(bdayArray[2])
+        parseInt(input_year)
     );
 
     var currentDay = currentTime.getDay();
