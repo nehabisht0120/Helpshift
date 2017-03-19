@@ -1,0 +1,34 @@
+.week-box {
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid blue;
+    margin: 25px;
+}
+
+.day-tag {
+    left: 1.8em;
+    top: 2em;
+    width: 300px;
+    position: relative;
+    height: 40px;
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+.child-box {
+	z-index: 100;
+    font-size: 2em;
+    color: blue;
+    font-weight: 100;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    border: 1px solid red;
+}
+
+.font-color {
+	color: white;
+}

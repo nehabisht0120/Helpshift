@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container" style="background-color: lightblue; position: relative;">
+        <div class="col-md-12">
+            <div class="row text-center">
+                <h1>Birthday Cal</h1>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="day-tag text-center">
+                    	<h4 class="font-color">Monday</h4>
+                    </div>
+                    <div class="week-box" id="Monday">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="day-tag text-center">
+                    	<h4 class="font-color">Tuesday</h4>
+                    </div>
+                    <div class="week-box" id="Tuesday">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="day-tag text-center">
+                    	<h4 class="font-color">Wednesday</h4>
+                    </div>
+                    <div class="week-box" id="Wednesday">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="day-tag text-center">
+                    	<h4 class="font-color">Thursday</h4>
+                    </div>
+                    <div class="week-box" id="Thursday">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="day-tag text-center">
+                    	<h4 class="font-color">Friday</h4>
+                    </div>
+                    <div class="week-box" id="Friday">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="day-tag text-center">
+                    	<h4 class="font-color">Saturday</h4>
+                    </div>
+                    <div class="week-box" id="Saturday">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="day-tag text-center">
+                    	<h4 class="font-color">Sunday</h4>
+                    </div>
+                    <div class="week-box" id="Sunday">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <textarea rows="30" cols="80" id="input_birthday"></textarea>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="input_year" name="">
+                    <br>
+                    <br>
+                    <button class="btn btn-primary btn-lg" onclick="update_box()">Update</button>
+                    <button class="btn btn-warning btn-lg" onclick="refreshPage()">Refresh Page</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
